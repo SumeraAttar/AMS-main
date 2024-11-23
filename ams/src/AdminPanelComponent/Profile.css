@@ -1,0 +1,156 @@
+.dashboard-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar ul li.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.photo-upload {
+    position: relative;
+}
+
+.upload-label {
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+.trainers-content {
+    padding: 20px;
+}
+
+.trainers-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+}
+
+.trainer-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.trainer-photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.trainer-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.trainer-email,
+.trainer-designation {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+.placement-content {
+    padding: 20px;
+}
+
+.placement-cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px;
+}
+
+.placement-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.placement-card:hover {
+    transform: scale(1.05);
+}
+
+.placement-company {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.placement-role,
+.placement-location,
+.placement-deadline {
+    margin: 5px 0;
+}
+
+.placement-description {
+    margin: 10px 0;
+    color: #555;
+}
+
+.placement-card p {
+    font-size: 0.95em;
+    color: #333;
+}
