@@ -227,7 +227,7 @@ app.get("/user", async (req, resp) => {
 
 // Add Student Endpoint
 app.post("/students", async (req, resp) => {
-  const { id, name, batch } = req.body;
+  const { id, name, batch,course } = req.body;
 
   try {
     // Check if student with the same ID already exists
@@ -240,7 +240,7 @@ app.post("/students", async (req, resp) => {
     }
 
     // Create new student
-    const student = new Student({ id, name, batch });
+    const student = new Student({ id, name, batch,course });
     const result = await student.save();
 
     return resp.status(201).json({
