@@ -17,8 +17,8 @@ const transporter = nodemailer.createTransport({
   port: 587,
   secure: false, // true for 465, false for other ports
   auth: {
-    user: "lms.radiantitservices@gmail.com",
-    pass: "xtll ytwm ninj ptxp",
+    user: "sumeraattar1510@gmail.com",
+    pass: "kvim tppv rclk mmvj",
   },
 });
 
@@ -83,7 +83,7 @@ app.post("/signup", async (req, resp) => {
 
     // Prepare the email options
     const mailOptions = {
-      from: "lms.radiantitservices@gmail.com",
+      from: "sumeraattar1510@gmail.com",
       to: email,
       subject: "Your Attendance Portal Login Details",
       text: `Hello ${name},\n\nWelcome to the Student Attendance Portal. Below are your login credentials:\n\nEmail: ${email}\nPassword: ${password}\nBatch: ${batch}\nStudent ID: ${id}\n\nIt's crucial to keep this information confidential. Do not share your credentials with anyone. They are for your personal use only.\n\nIf you have any questions or concerns, please don't hesitate to reach out.\n\nBest regards,\nAdmin Department,\nRADIANT IT SERVICES PVT. LTD.`,
