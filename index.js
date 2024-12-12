@@ -11,6 +11,22 @@ require("dotenv").config(); // For loading environment variables
 const nodemailer = require("nodemailer");
 
 
+const multer = require("multer");
+
+// Configure Multer for file storage
+const storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, "uploads/"); // Folder to store files
+  },
+  filename: function (req, file, cb) {
+    cb(null, Date.now() + "-" + file.originalname); // Rename the file
+  },
+});
+
+const upload = multer({ storage: storage });
+
+
+
 // Setup nodemailer transporter
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -223,13 +239,13 @@ app.get("/user", async (req, resp) => {
 //   let result = await student.save();
 //   resp.send(result);
 // });
-// Existing imports and configurations remain the same
 
-// Add Student Endpoint
-app.post("/students", async (req, resp) => {
-  const { id, name, batch, course, photo } = req.body; // Include photo
+app.post("/students", upload.single("photo"), async (req, resp) => {
+  const { id, name, batch, course } = req.body;
+  const photo = req.file ? req.file.path : null; // Get the uploaded file path
 
   try {
+    // Check if student with the same ID already exists
     const existingStudent = await Student.findOne({ id });
     if (existingStudent) {
       return resp.status(400).json({
@@ -238,7 +254,8 @@ app.post("/students", async (req, resp) => {
       });
     }
 
-    const student = new Student({ id, name, batch, course, photo }); // Save photo
+    // Create new student
+    const student = new Student({ id, name, batch, course, photo });
     const result = await student.save();
 
     return resp.status(201).json({
@@ -247,7 +264,7 @@ app.post("/students", async (req, resp) => {
       data: result,
     });
   } catch (error) {
-    console.error("Error while adding student:", error);
+    console.error("Error adding student:", error);
     return resp.status(500).json({
       success: false,
       message: "An error occurred while adding the student.",
