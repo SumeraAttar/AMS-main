@@ -227,10 +227,9 @@ app.get("/user", async (req, resp) => {
 
 // Add Student Endpoint
 app.post("/students", async (req, resp) => {
-  const { id, name, batch, course, photo } = req.body; // Include 'photo' in destructuring
+  const { id, name, batch, course, photo } = req.body; // Include photo
 
   try {
-    // Check if student with the same ID already exists
     const existingStudent = await Student.findOne({ id });
     if (existingStudent) {
       return resp.status(400).json({
@@ -239,8 +238,7 @@ app.post("/students", async (req, resp) => {
       });
     }
 
-    // Create new student
-    const student = new Student({ id, name, batch, course, photo }); // Add 'photo' field
+    const student = new Student({ id, name, batch, course, photo }); // Save photo
     const result = await student.save();
 
     return resp.status(201).json({
@@ -249,7 +247,7 @@ app.post("/students", async (req, resp) => {
       data: result,
     });
   } catch (error) {
-    console.error("Error adding student:", error);
+    console.error("Error while adding student:", error);
     return resp.status(500).json({
       success: false,
       message: "An error occurred while adding the student.",
@@ -257,7 +255,6 @@ app.post("/students", async (req, resp) => {
     });
   }
 });
-
 
 // update student..................................................
 app.get("/update-student/:id", async (req, resp) => {
