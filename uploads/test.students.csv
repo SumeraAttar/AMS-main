@@ -1,0 +1,107 @@
+_id,id,name,batch,course,__v
+67470cd60781a225eb7913ba,501,Vaibhav Satish Achole ,HTD_Data Analysis_2024,Data Science,0
+67470d480781a225eb7913c0,502,Ashwini Subhash Narwade ,HTD_Data Analysis_2024,Data Science,0
+6748291b30d0a2bee109de14,504,Keshav Vitthal Bhise,HTD_Data Analysis_2024,Data Science,0
+6748295230d0a2bee109de19,508,Keshav Vitthal Bhise,HTD_Data Analysis_2024,Data Science,0
+6748420fa0140371e8868513,511,Shashikala Kabir Londhe ,DS_MayurSalunke_B1_Nov2024,Data Science,0
+67484261a0140371e8868521,512,Sanika Dattatray Ambi,DS_MayurSalunke_B1_Nov2024,Data Science,0
+67484364a0140371e886852f,514,Deepali Chorage,HTD_Data Analysis_2024,HTD:Data Science,0
+674d5aaf178b49672e307791,510,Prem Patil,HTD_MonicaMam_Fullstack 2024,HTD:Full Stack Java Development,0
+674d5b1e178b49672e30779a,516,Shesherao Narote,HTD_MonicaMam_Fullstack 2024,HTD:Full Stack Java Development,0
+674d5e29178b49672e3077ab,520,Dipali Solanke,HTD_MonicaMam_Fullstack 2024,HTD:Full Stack Java Development,0
+674d5fdf178b49672e3077b1,522,Rutuja Gite,HTD_MonicaMam_Fullstack 2024,HTD:Full Stack Java Development,0
+674d785ac9c1c24d22e3338b,523,Nilesh Balasaheb Kalekar ,HTD_MonicaMam_Fullstack 2024,HTD:Full Stack Java Development,0
+674d7f77262f82215c5cdadb,526,Vishal Ghule,HTD_MonicaMam_Fullstack 2024,HTD:Full Stack Java Development,0
+674eb263bbe0c4183d655b59,527,Jay Ramkisan Jadhav,HTD_MonicaMam_Fullstack 2024,HTD:Full Stack Java Development,0
+674eb2b3bbe0c4183d655b5f,530,Jay Ramkisan Jadhav,HTD_MonicaMam_Fullstack 2024,HTD:Full Stack Java Development,0
+674eb2c7bbe0c4183d655b63,533,Jay Ramkisan Jadhav,HTD_MonicaMam_Fullstack 2024,HTD:Full Stack Java Development,0
+67501c55f896320016713fe1,555,Sumera Attar,HTD_Snehal_2024,Full Stack Java Development,0
+67501cbd30c3875b1c84d576,557,Shivam sir,HTD_Snehal_2024,Full Stack Java Development,0
+67501d2730c3875b1c84d589,545,Sabiha Shaikh,HTD_Snehal_2024,Full Stack Java Development,0
+67515122081d7efbad9e43ec,48,Madeline King,FS_MonicaMam_B1_July2024,Power BI,0
+67516fc6a5a36581435a8c56,23,snehal,HTD_SnehalDataAnalysis_2024,HTD:Web Development,0
+6751aaee7adddf2a1195747f,258,Tasmiya Khalifa,HTD_Data Analysis_2024,HTD:Data Science,0
+6751ac891290a7d7ec0de4a9,116,Pratiksha Patil,HTD_Data Analysis_2024,HTD:Data Science,0
+6751acfc7adddf2a1195748f,218,Sayali Babar,HTD_Data Analysis_2024,HTD:Data Science,0
+6751ad807adddf2a11957498,285,Keshav Bhise,HTD_Data Analysis_2024,HTD:Data Science,0
+6751c38a1903cf09326d61c8,390,Vaibhav Achole,HTD_Data Analysis_2024,HTD:Data Science,0
+6752b8e548e503ecf30780e7,29,Rohit Waghmare,DS_MayurSalunke_B1_Nov2024,Data Science,0
+675697465a28fb32b12eb47e,30,Amit Hemant Patil,HTD_MonicaMam_Fullstack 2024,HTD:Full Stack Java Development,0
+6756a95bb7d33a0872abc6f3,31,Aman Meshram,DA_9:30am_MayurSalunke_B1_Sept2024,Data Analysis,0
+6756a9f1b7d33a0872abc6fd,32,Akash Jadhav,DA_9:30am_MayurSalunke_B1_Sept2024,Data Analysis,0
+6756aa88b7d33a0872abc707,33,Mrunmayee Sarnaik,DA_9:30am_MayurSalunke_B1_Sept2024,Data Analysis,0
+6756b8a4b7d33a0872abc7ed,38,Pooja Gole,DA_9:30am_MayurSalunke_B1_Sept2024,Data Analysis,0
+6756b95d4e9fe087015bbadb,39,Pushpak Chavan,DA_9:30am_MayurSalunke_B1_Sept2024,Data Analysis,0
+6756b9b54e9fe087015bbaec,40,Shivraj Jadhav,DA_9:30am_MayurSalunke_B1_Sept2024,Data Analysis,0
+6756ba624e9fe087015bbaf6,41,Suhas Wathore,DA_9:30am_MayurSalunke_B1_Sept2024,Data Analysis,0
+6756bab6b7d33a0872abc806,42,Vaibhav Telgote	,DA_9:30am_MayurSalunke_B1_Sept2024,Data Analysis,0
+6757ec5c438cf562eb245a72,37,Shubham Santosh Waghale,FS_8am_MonicaJadhav_Aug2024,Full Stack Java Development,0
+67580c90544e6998d6b89a33,601,Abhishek Shelar,FS_8am_MonicaJadhav_Aug2024,Full Stack Java Development,0
+67580d82544e6998d6b89a3f,602,Aniket Pradip Patil ,FS_8am_MonicaJadhav_Aug2024,Full Stack Java Development,0
+67580e52544e6998d6b89a47,603,Ashutosh Mulik,FS_8am_MonicaJadhav_Aug2024,Full Stack Java Development,0
+67581090544e6998d6b8a73e,604,Shivam Anil Yadav ,FS_8am_MonicaJadhav_Aug2024,Full Stack Java Development,0
+67581141544e6998d6b8a745,605,Suyash Sharad Raskar ,FS_8am_MonicaJadhav_Aug2024,Full Stack Java Development,0
+6758126f544e6998d6b8a752,606,Pruthviraj Balwant Jagtap ,FS_8am_MonicaJadhav_Aug2024,Full Stack Java Development,0
+6758131a544e6998d6b8a758,607,Harshwardhan deepak thorat ,FS_8am_MonicaJadhav_Aug2024,Full Stack Java Development,0
+67581465544e6998d6b8a75e,609,Himanshu Popat Londhe ,FS_8am_MonicaJadhav_Aug2024,Full Stack Java Development,0
+675818ca2b4ea7efcfa27b28,611,Laxman Baliram Shinde,FS_8am_MonicaJadhav_Aug2024,Full Stack Java Development,0
+67582213fd9f04df07a7ef53,612,Utkarsh Satish Thorat,FS_8am_MonicaJadhav_Aug2024,Full Stack Java Development,0
+6758234cfd9f04df07a7f0f2,614,Anandi chandrashekhar Joshi ,FS_9:30am_Monica Jadhav_May2024,Full Stack Java Development,0
+67582592fd9f04df07a7f0f8,615,Chetan Jankinath Chunole,FS_9:30am_Monica Jadhav_May2024,Full Stack Java Development,0
+6758272efd9f04df07a7f0fe,616,Disha Thakre,FS_9:30am_Monica Jadhav_May2024,Full Stack Java Development,0
+6758286800182b172c05f1ad,617,Divya Hanumant Londhe ,FS_9:30am_Monica Jadhav_May2024,Full Stack Java Development,0
+675828e300182b172c05f1b3,618,Nemichand Ghode ,FS_9:30am_Monica Jadhav_May2024,Full Stack Java Development,0
+6758293b00182b172c05f1b9,619,Mohammad Sameer Mohammad Zaheer ,FS_9:30am_Monica Jadhav_May2024,Full Stack Java Development,0
+67582a0900182b172c05f1bf,620,Jayesh Dilip Mali ,FS_9:30am_Monica Jadhav_May2024,Full Stack Java Development,0
+67582a4c00182b172c05f1c5,621,Tanisha Gajanan Bharadbhunje ,FS_9:30am_Monica Jadhav_May2024,Full Stack Java Development,0
+67582ac700182b172c05f1cb,622,Vijay Pandurang Jadhav ,FS_9:30am_Monica Jadhav_May2024,Full Stack Java Development,0
+67582b4d00182b172c05f1d1,623,Chaitanya Rajendra Deshpande ,FS_9:30am_Monica Jadhav_May2024,Full Stack Java Development,0
+67582c8000182b172c05f1df,58,Aboli Santosh Bhagwat ,FS_11am_MonicaJadhav_B1_July2024,Full Stack Java Development,0
+67582cd800182b172c05f1e5,59,Akanksha Ishvar Shitole ,FS_11am_MonicaJadhav_B1_July2024,Full Stack Java Development,0
+67582d4e544ad2e1e649b444,60,Akash Pramod  chavan ,FS_11am_MonicaJadhav_B1_July2024,Full Stack Java Development,0
+67582da4544ad2e1e649b44f,61,Atharva Manoj Patane ,FS_11am_MonicaJadhav_B1_July2024,Full Stack Java Development,0
+67582deb00182b172c05f1fa,62,Pranjali Premchand Ghadge ,FS_11am_MonicaJadhav_B1_July2024,Full Stack Java Development,0
+67582e8400182b172c05f201,63,Pranjali Premchand Ghadge ,FS_11am_MonicaJadhav_B1_July2024,Full Stack Java Development,0
+67582f26544ad2e1e649b45f,64,Pragati Umate,FS_11am_MonicaJadhav_B1_July2024,Full Stack Java Development,0
+67592327c69270d080cb1cfd,65,snehal,HTD_SnehalDataAnalysis_2024,HTD:Full Stack Java Development,0
+675927add2275959347f370f,67,snehal,HTD_SnehalDataAnalysis_2024,Salesforce,0
+67592816d2275959347f3716,68,snehal,HTD_SnehalDataAnalysis_2024,Salesforce,0
+67592822d2275959347f371a,72,snehal,HTD_SnehalDataAnalysis_2024,Salesforce,0
+67592882d2275959347f3721,73,sumera,HTD_SnehalDataAnalysis_2024,Power BI,0
+675928d7d2275959347f3728,74,sumera,HTD_SnehalDataAnalysis_2024,Power BI,0
+675928ded2275959347f372c,76,sumera,HTD_SnehalDataAnalysis_2024,Power BI,0
+67592927d2275959347f3731,77,sumera,HTD_SnehalDataAnalysis_2024,Power BI,0
+67592aabd2275959347f3737,78,sumera,HTD_SnehalDataAnalysis_2024,Power BI,0
+67592ac4d2275959347f373b,79,sumera,HTD_SnehalDataAnalysis_2024,Power BI,0
+67592b143f464c43cd0c76ca,75,snehal,HTD_SnehalDataAnalysis_2024,Salesforce,0
+67592efc401d98140830fe8c,24,Reed Murphy,HTD_SnehalDataAnalysis_2024,Salesforce,0
+67592f4a401d98140830fe9d,777,snehal,HTD_SnehalDataAnalysis_2024,HTD:Web Development,0
+67592f6a401d98140830fea4,25,Reed Murphy,HTD_SnehalDataAnalysis_2024,Salesforce,0
+67592f87401d98140830fea8,90,Reed Murphy,HTD_SnehalDataAnalysis_2024,Salesforce,0
+67592f93401d98140830feac,98,Reed Murphy,HTD_SnehalDataAnalysis_2024,Salesforce,0
+67592fa6401d98140830feb1,109,Reed Murphy,HTD_SnehalDataAnalysis_2024,Salesforce,0
+67592fd4401d98140830feb7,778,snehal,HTD_SnehalDataAnalysis_2024,HTD:Web Development,0
+67593245154e08c58a5f5dce,83,Suki Pugh,HTD_SnehalDataAnalysis_2024,HTD:Full Stack Java Development,0
+6759348b154e08c58a5f5dd6,84,umar,HTD_SnehalDataAnalysis_2024,Power BI,0
+675934d4154e08c58a5f5ddc,779,snehal,HTD_SnehalDataAnalysis_2024,HTD:Web Development,0
+67593529154e08c58a5f5de2,780,snehal,HTD_SnehalDataAnalysis_2024,HTD:Web Development,0
+67593531154e08c58a5f5de6,781,snehal,HTD_SnehalDataAnalysis_2024,HTD:Web Development,0
+67593642154e08c58a5f5dee,782,snehal,HTD_SnehalDataAnalysis_2024,HTD:Web Development,0
+67593710228ea16506514b31,89,abc,HTD_SnehalDataAnalysis_2024,HTD:Web Development,0
+67593a29a57e79285c79047f,203,abc,HTD_SnehalDataAnalysis_2024,HTD:Web Development,0
+67593a7c4058420944585350,91,Attar Iqra,HTD_SnehalDataAnalysis_2024,HTD:Web Development,0
+67595724cc15084e6cf5ab17,92,Alfiya,HTD_SnehalDataAnalysis_2024,HTD:Full Stack Java Development,0
+67595edb0d16a89bf4995f54,93,Sayali Sanjay Lokhande,FS_11am_MonicaJadhav_B1_July2024,Full Stack Java Development,0
+67596146f67c1d13d4e16704,94,Gulab Machhindra Mandhare ,FS_11am_MonicaJadhav_B2_July2024,Full Stack Java Development,0
+675962f5ca360eb31f7c2dfa,95,Prathmesh Umesh Mokashe ,FS_11am_MonicaJadhav_B2_July2024,Full Stack Java Development,0
+675963aaca360eb31f7c2e05,96,Rutvik Ramesh Sawant,FS_11am_MonicaJadhav_B2_July2024,Full Stack Java Development,0
+675964a0ca360eb31f7c2e10,97,Sejal Chetan Bharambe ,FS_11am_MonicaJadhav_B2_July2024,Full Stack Java Development,0
+67596544bf23c807a0dde57d,99,Shweta Bajirao Bamane ,FS_11am_MonicaJadhav_B2_July2024,Full Stack Java Development,0
+675966c5ca360eb31f7c2e2a,100,Shrutika Atmaram Desai ,FS_11am_MonicaJadhav_B2_July2024,Full Stack Java Development,0
+6759671bbf23c807a0dde58f,101,Suraj Sunil Bhujbal,FS_11am_MonicaJadhav_B2_July2024,Full Stack Java Development,0
+675972ba18bbe40ab8aa1d6c,102,Sayli Sanjay Shinde,FS_11am_MonicaJadhav_B2_July2024,Full Stack Java Development,0
+6759767fa3c4550680474291,103,Kiran Siddheshwar Patil,DS_3pm_MayurSir_B1_Aug2024,Data Analysis,0
+67597880a3c455068047429f,104,Rucha Thakare ,DS_3pm_MayurSir_B1_Aug2024,Data Science,0
+67597ca471d628b320f91fc3,105,Samadhan Parshuram Jadhav ,DS_3pm_MayurSir_B1_Aug2024,Data Analysis,0
+6759ad646f4fe0d20ca8c490,106,Sneha Karajgikar,HTD_Data Analysis_2024,HTD:Data Analysis,0
+675a9fcf99d3a1338eefc95b,1111, Sultana,Sumera Mam,data science,0
