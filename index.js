@@ -240,9 +240,9 @@ app.get("/user", async (req, resp) => {
 //   resp.send(result);
 // });
 
-app.post("/students", upload.single("photo"), async (req, resp) => {
-  const { id, name, batch, course } = req.body;
-  const photo = req.file ? req.file.path : null; // Get the uploaded file path
+// Add Student Endpoint
+app.post("/students", async (req, resp) => {
+  const { id, name, batch,course } = req.body;
 
   try {
     // Check if student with the same ID already exists
@@ -255,7 +255,7 @@ app.post("/students", upload.single("photo"), async (req, resp) => {
     }
 
     // Create new student
-    const student = new Student({ id, name, batch, course, photo });
+    const student = new Student({ id, name, batch,course });
     const result = await student.save();
 
     return resp.status(201).json({
@@ -272,7 +272,6 @@ app.post("/students", upload.single("photo"), async (req, resp) => {
     });
   }
 });
-
 // update student..................................................
 app.get("/update-student/:id", async (req, resp) => {
   let result = await User.findOne({ id: req.params.id });
