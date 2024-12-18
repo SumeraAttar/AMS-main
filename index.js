@@ -640,7 +640,8 @@ app.get("*", (req, res) => {
 
 
 
-app.listen(5002, '0.0.0.0',  ()=>{
-  console.log("Server is started");
+const port = process.env.PORT || 5002; // Use the port from the environment, defaulting to 5001
+app.listen(port, () => {
+  console.log(Server is started on port ${port});
 });
 
