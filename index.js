@@ -41,7 +41,11 @@ const transporter = nodemailer.createTransport({
 // Initialize Express app
 const app = express();
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+    origin: ["https://frontend.radiantitservices.in"], // Allow requests from this origin
+    methods: ["POST", "GET", "DELETE", "PUT"],
+    credentials: true
+  }));
 
 // signup.....................................
 
