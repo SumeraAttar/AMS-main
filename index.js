@@ -562,54 +562,6 @@ app.get("/attendance-summary/:month/:batch", async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
-app.get("/attendance/:email/:month", async (req, res) => {
-  const { email, month } = req.params;
-
-  try {
-      // Find student details by email
-      const student = await Student.findOne({ email });
-      if (!student) {
-          return res.status(404).json({ message: "Student not found." });
-      }
-
-      const { id, batch } = student; // Extract student id and batch from the student document
-
-      // Fetch attendance records
-      const attendance = await Attendance.find();
-      const filteredAttendance = [];
-      let presentCount = 0;
-      let absentCount = 0;
-
-      attendance.forEach((record) => {
-          if (record.date.startsWith(month) && record.batches) {
-              const batchAttendance = record.batches.find(
-                  (b) => b.batchName === batch
-              );
-              if (batchAttendance) {
-                  const studentAttendance = batchAttendance.records.find(
-                      (att) => att.studentId === id
-                  );
-                  if (studentAttendance) {
-                      filteredAttendance.push({
-                          date: record.date,
-                          status: studentAttendance.status,
-                      });
-                      if (studentAttendance.status === "Present") presentCount++;
-                      if (studentAttendance.status === "Absent") absentCount++;
-                  }
-              }
-          }
-      });
-
-      res.json({
-          attendanceData: filteredAttendance,
-          totalAttendance: { present: presentCount, absent: absentCount },
-      });
-  } catch (error) {
-      console.error("Error fetching attendance:", error);
-      res.status(500).json({ message: "Error fetching attendance data." });
-  }
-});
 
 // student monthly report..............................................
 // Fetch student by ID and validate batch
