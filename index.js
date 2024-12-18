@@ -636,7 +636,7 @@ app.get("/attendance-report/:batch/:id/:month", async (req, res) => {
 
 
 
-const port = process.env.PORT || 5002; // Use the port from the environment, defaulting to 5001
+const port = process.env.PORT || 5001; // Use the port from the environment, defaulting to 5001
 app.listen(port, () => {
   console.log(Server is started on port ${port});
 });
