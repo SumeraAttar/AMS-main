@@ -10,15 +10,14 @@ const path = require("path");
 require("dotenv").config(); // For loading environment variables
 const nodemailer = require("nodemailer");
 
-
 // Setup nodemailer transporter
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
   secure: false, // true for 465, false for other ports
   auth: {
-    user: "lms.radiantitservices@gmail.com",
-    pass: "xtll ytwm ninj ptxp",
+    user: "ams.radiantitservice@gmail.com",
+    pass: "yvse mypp aosd fgql",
   },
 });
 
@@ -38,7 +37,7 @@ app.use(cors());
 
 //     // Prepare the email options
 //     const mailOptions = {
-//       from: "gawaianiket499@gmail.com",
+//       from: "ams.radiantitservice@gmail.com",
 //       to: user.email,
 //       subject: "Your Attendance Portal Login Details",
 //       text: `Hello ${user.name},\n\nWelcome to the Student Attendance Portal. Below are your login credentials:\n\nEmail: ${user.email}\nPassword: ${req.body.password}\nBatch: ${req.body.batch}\nStudent ID: ${req.body.id}\n\nIt's crucial to keep this information confidential. Do not share your credentials with anyone. They are for your personal use only.\n\nIf you have any questions or concerns, please don't hesitate to reach out.\n\nBest regards,\nAdmin Department,\nRADIANT IT SERVICES PVT. LTD.`,
@@ -63,7 +62,7 @@ app.use(cors());
 
 // Signup Endpoint
 app.post("/signup", async (req, resp) => {
-  const { name, email, password, role,course, id, batch, dob } = req.body;
+  const { name, email, password, role, id, batch, dob } = req.body;
 
   try {
     // Check if user with the same email or ID already exists
@@ -76,14 +75,14 @@ app.post("/signup", async (req, resp) => {
     }
 
     // Create new user
-    const user = new User({ name, email, password, role, course ,id, batch, dob });
+    const user = new User({ name, email, password, role, id, batch, dob });
     let result = await user.save();
     result = result.toObject();
     delete result.password;
 
     // Prepare the email options
     const mailOptions = {
-      from: "lms.radiantitservices@gmail.com",
+      from: "ams.radiantitservice@gmail.com",
       to: email,
       subject: "Your Attendance Portal Login Details",
       text: `Hello ${name},\n\nWelcome to the Student Attendance Portal. Below are your login credentials:\n\nEmail: ${email}\nPassword: ${password}\nBatch: ${batch}\nStudent ID: ${id}\n\nIt's crucial to keep this information confidential. Do not share your credentials with anyone. They are for your personal use only.\n\nIf you have any questions or concerns, please don't hesitate to reach out.\n\nBest regards,\nAdmin Department,\nRADIANT IT SERVICES PVT. LTD.`,
@@ -129,34 +128,12 @@ app.post("/login", async (req, resp) => {
   }
 });
 
-
-
-app.post('/api/login', async (req, res) => {
-  try {
-      const { email, password } = req.body;
-      
-      const user = await User.findOne({ email, password });
-      
-      if (user) {
-          req.session.user = {
-              email: user.email,
-              course: user.course,
-              role: user.role  // Role added to session
-          };
-          
-          console.log('Session after login:', req.session.user); // Debug line to check session data
-          res.status(200).send("Login successful!");
-          res.send(user);
-      } else {
-          res.status(401).send("Login failed. Incorrect credentials.");
-      }
-  } catch (error) {
-      console.error("Error logging in:", error);
-      return res.status(500).send("Internal Server Error");
-  }
+// users..........................................
+app.get("/user", async (req, resp) => {
+  let user = await User.find();
+  resp.send(user);
 });
 
-// Endpoint to get the Google Classroom URL based on course
 app.get("/lms/:email", async (req, res) => {
   const { email } = req.params;
   try {
@@ -209,15 +186,7 @@ app.get("/api/profile/:email", async (req, res) => {
     res.status(500).json({ message: "Error fetching profile" });
   }
 });
-
-
-// users..........................................
-app.get("/user", async (req, resp) => {
-  let user = await User.find();
-  resp.send(user);
-});
-
-// add user.................................
+// add student.................................
 // app.post("/students", async (req, resp) => {
 //   let student = new Student(req.body);
 //   let result = await student.save();
@@ -269,51 +238,6 @@ app.get("/update-student/:id", async (req, resp) => {
   }
 });
 
-// Endpoint to fetch attendance by email
-app.get("/attendance/:email", async (req, res) => {
-  const { email } = req.params;
-
-  try {
-    // Find attendance records for the student
-    const attendanceDocs = await Attendance.find({
-      "batches.records.studentId": email,
-    });
-
-    const attendanceData = [];
-    let presentCount = 0;
-    let absentCount = 0;
-
-    attendanceDocs.forEach((doc) => {
-      doc.batches.forEach((batch) => {
-        batch.records.forEach((record) => {
-          if (record.studentId === email) {
-            attendanceData.push({
-              date: doc.date,
-              status: record.status,
-            });
-
-            if (record.status === "Present") {
-              presentCount++;
-            } else if (record.status === "Absent") {
-              absentCount++;
-            }
-          }
-        });
-      });
-    });
-
-    // Return formatted attendance data
-    res.json({
-      attendanceData,
-      totalAttendance: { present: presentCount, absent: absentCount },
-    });
-  } catch (error) {
-    console.error("Error fetching attendance:", error);
-    res.status(500).json({ message: "Error fetching attendance data" });
-  }
-});
-
-
 app.put("/update-user-student/:id", async (req, resp) => {
   try {
     let result = await User.updateOne(
@@ -323,7 +247,7 @@ app.put("/update-user-student/:id", async (req, resp) => {
 
 // Prepare the email options
     const mailOptions = {
-      from: "gawaianiket499@gmail.com",
+      from: "ams.radiantitservice@gmail.com",
       to: req.body.email,
       subject: "Your Attendance Portal Login Details",
       text: `Hello ${req.body.name},\n\nWelcome to the Student Attendance Portal. Below are your login credentials:\n\nEmail: ${req.body.email}\nPassword: ${req.body.password}\nBatch: ${req.body.batch}\nStudent ID: ${req.body.id}\n\nIt's crucial to keep this information confidential. Do not share your credentials with anyone. They are for your personal use only.\n\nIf you have any questions or concerns, please don't hesitate to reach out.\n\nBest regards,\nAdmin Department,\nRADIANT IT SERVICES PVT. LTD.`,
